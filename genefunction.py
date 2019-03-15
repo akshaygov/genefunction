@@ -263,10 +263,10 @@ def main():
 	parser.add_argument('-output_file', type=str, help='The output plain text file of newline-delimited gene names with their functions.')
 	args = parser.parse_args()
 	
-	#If no gene_name and both output_file and input_file arguments aren't given
+	#if no gene_name and both output_file and input_file arguments aren't given
 	if (not (args.output_file is not None and args.input_file is not None) and args.gene_name is None):
 		print("Both input and output file required, or single gene name.")
-	#If no gene_name and both output_file and input_file arguments are given
+	#if no gene_name and both output_file and input_file arguments are given
 	elif ((args.output_file is not None and args.input_file is not None) and (args.gene_name is None)):
 		
 		with open(args.input_file, 'r') as IN, open(args.output_file, 'w') as OUT:
@@ -276,7 +276,7 @@ def main():
 				
 				OUT.write(g.rstrip('\n') + ": " + summarizeGene(g.rstrip('\n')) + '\n')
 
-	#If gene_name and both output_file and input_file arguments given
+	#if gene_name and both output_file and input_file arguments given
 	elif ((args.gene_name is not None) and (not (args.output_file is None and args.input_file is None))):
 		print("Single gene's name cannot be given as argument alongside input/output file arguments")
 
