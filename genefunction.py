@@ -11,7 +11,7 @@ from nltk.probability import FreqDist
 
 
 def removeparens(text):
-	#removes text in between parentheses
+	#removes text between parentheses
 
 	new_txt = re.sub(r'\(.*?\)', '', text)
 	return new_txt
