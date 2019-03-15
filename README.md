@@ -23,5 +23,6 @@ optional arguments:
 ## Example
 ```
 $ python3 genefunction.py -gene_name TP53
-TP53: component of the EKC/KEOPS complex that is required for the formation of a threonylcarbamoyl group on adenosine at position 37 in tRNAs that read codons beginning with adenine
+TP53: component of the EKC/KEOPS complex that is required for the formation of a threonylcarbamoyl 
+group on adenosine at position 37 in tRNAs that read codons beginning with adenine
 ```
