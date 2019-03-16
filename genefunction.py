@@ -20,7 +20,7 @@ def removeone(lst):
     return lst[0:lst.index("<")]
 
 def removetwo(text):
-    #when text at least one pair of < and >
+    #when text has at least one pair of < and >
     new_txt = re.sub('<.*?>', '', text)
     return new_txt
 
